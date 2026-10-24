@@ -3,8 +3,10 @@ import React from "react";
 import { View, StyleSheet } from "react-native";
 // import { SelectPhoneApp } from "./src/Bai1/SelectPhoneApp";
 // import { Phone } from "./src/types";
-import { SelectPhoneApi } from "./src/Bai2/SelectPhoneApi";
+// import { SelectPhoneApi } from "./src/Bai2/SelectPhoneApi";
+import { BottomTabApp } from "./src/Bai3/BottomTabApp";
 
 export default function App() {
-  return <SelectPhoneApi />;
+  // return <SelectPhoneApi />;
+  return <BottomTabApp />;
 }
