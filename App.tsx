@@ -1,11 +1,26 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+
+import React from "react";
+import { View, StyleSheet } from "react-native";
+import { SelectPhoneApp } from "./src/Bai1/SelectPhoneApp";
+import { Phone } from "./src/types";
+
+const phone: Phone = {
+  id: "1",
+  name: "iPhone 17 Pro Max",
+  price: 34990000,
+  oldPrice: 37990000,
+  rating: 4.9,
+  reviewCount: 1250,
+  supplier: "Apple",
+  badge: "Bán chạy",
+  colors: ["silver", "black", "blue", "red"],
+  defaultColor: "blue",
+};
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <SelectPhoneApp phone={phone} />
     </View>
   );
 }
@@ -13,8 +28,5 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 });
